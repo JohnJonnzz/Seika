@@ -1,0 +1,383 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #DFB163;
+    --secondary: #252531;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #F3F6FF;
+    --dark: #181818;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Montserrat", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.register-btn{
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container{
+    padding: 0 7%;
+}
+
+.container p{
+    text-align: center;
+}
+
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.navbar-white{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.navbar-white .nav-links li a{
+    color: black;
+}
+
+.navbar-white .register-btn{
+    background:var(--green);
+    color: #fff;
+}
+
+nav .navbar-white .ri-menu-line{
+    color: #000;
+}
+
+.navbar-white .active::after{
+    background: var(--primary);
+}
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: '';
+    background: black;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+nav .ri-menu-line{
+    display: none;
+}
+
+.house-details{
+    padding: 0 12%;
+}
+
+.house-title{
+    margin-top: 50px;
+}
+
+.house-title h1{
+    font-weight: 600;
+}
+
+.house-title .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.house-title span{
+    margin: 0 20px;
+}
+
+.house-title i{
+    color: #000;
+    font-size: 14px;
+}
+
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'first first . .' "first first . .";
+    margin: 20px 0;
+}
+
+.gallery div img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-img-1{
+    grid-area: first;
+}
+
+.small-details h2{
+    font-weight: 550;
+}
+
+.small-details h4{
+    text-align: right;
+    font-size: 22px;
+}
+
+.line{
+    border: 0;
+    height: 1px;
+    background: #999;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+
+.container-btn{
+    margin: 30px 0;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.container-btn button{
+    background: lightgreen;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 18px;
+    width: 350px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.details-list{
+    list-style: none;
+    margin: 50px 0;
+}
+
+.details-list li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #555;
+    position: relative;
+}
+
+.details-list li span{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.details-list li i{
+    position: absolute;
+    top: 5px;
+    left: -40px;
+}
+
+.home-description{
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.map{
+    margin: 50px 0;
+}
+
+.map h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.map iframe{
+    width: 100%;
+}
+@media only screen and (max-width: 700px){
+    .logo{
+        position: absolute;
+        top: 4%;
+        left: 7%;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+    }
+
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+
+    nav .ri-menu-line{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #000;
+        font-size: 28px;
+    }
+    .active::after{
+        left: -40px;
+        transform: translateX(0, 50%);
+        bottom: 50%;
+        border-radius: 2px;
+    }
+    .hidemenu{
+        max-height: 300px;
+    }
+
+    .header h1{
+        padding-top: 200px;
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .house-details{
+        margin-top: 150px;
+    }
+    .row p{
+        margin-top: 10px;
+    }
+    .gallery{
+        grid-template-areas: 'first first . .' "first first . .";
+    }
+    .small-details h2{
+        font-size: 20px;
+        margin-top: 24px;
+    }
+    .small-details h4{
+        text-align: left;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+}
+
+
+.order-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.order-btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.instagram-btn {
+    background-color: #405DE6; /* Instagram color */
+    color: #fff;
+}
+
+.whatsapp-btn {
+    background-color: #25D366; /* WhatsApp color */
+    color: #fff;
+}
+
+.order-btn i {
+    margin-right: 5px;
+}
